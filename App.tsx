@@ -28,14 +28,11 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#222",
+    backgroundColor: "#fff",
   },
   icons: {
     alignItems: "center",
     justifyContent: "center",
-  },
-  tabStyle: {
-    backgroundColor: "#333",
   },
 });
 
@@ -44,8 +41,8 @@ function MyTabs() {
     <Tab.Navigator
       initialRouteName="Início"
       activeColor="#fcba03"
-      inactiveColor="#fff"
-      barStyle={{ backgroundColor: "#222", borderTopWidth: 0 }}
+      inactiveColor="#000"
+      barStyle={{ backgroundColor: "#efefef", borderTopWidth: 0 }}
     >
       <Tab.Screen
         name="Sabores"
@@ -56,7 +53,7 @@ function MyTabs() {
               name="pizza"
               size={23}
               style={styles.icons}
-              color={focused ? "black" : "#808080"}
+              color={focused ? "black" : "#333"}
             />
           ),
         }}
@@ -70,7 +67,7 @@ function MyTabs() {
               name="home"
               size={23}
               style={styles.icons}
-              color={focused ? "black" : "#808080"}
+              color={focused ? "black" : "#333"}
             />
           ),
         }}
@@ -84,7 +81,7 @@ function MyTabs() {
               name="settings"
               size={23}
               style={styles.icons}
-              color={focused ? "black" : "#808080"}
+              color={focused ? "black" : "#333"}
             />
           ),
         }}

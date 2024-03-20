@@ -1,20 +1,29 @@
 import React from "react";
-import { View, Text, Pressable, Dimensions } from "react-native";
+import { View, Text, Pressable, Image } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import styleHome from "../styles/stylesHome";
 import stylePadrao from "../styles/stylesDefault";
 import { useFonts } from "expo-font";
-import { Montserrat_400Regular } from "@expo-google-fonts/montserrat";
+import {
+  Montserrat_400Regular,
+  Montserrat_600SemiBold,
+} from "@expo-google-fonts/montserrat";
 import SwiperFlatList from "react-native-swiper-flatlist";
+import logoDueste from "../components/images/duesteLogo.png";
 
 function TelaPrincipal() {
   useFonts({
     Montserrat_400Regular,
+    Montserrat_600SemiBold,
   });
 
   return (
     <SafeAreaView style={styleHome.fixCinza}>
       <View style={stylePadrao.style}>
+        <View style={styleHome.logoAlign}>
+          <Image source={logoDueste} style={styleHome.logoStyle} />
+        </View>
+
         <View style={styleHome.bannerStyle}>
           <SwiperFlatList
             autoplay
@@ -42,7 +51,7 @@ function TelaPrincipal() {
           <View style={styleHome.alignBtn}>
             <Pressable style={styleHome.btn}>
               <Text
-                style={{ fontFamily: "Montserrat_400Regular", fontSize: 19 }}
+                style={{ fontFamily: "Montserrat_400Regular", fontSize: 20 }}
               >
                 Delivery
               </Text>
@@ -50,7 +59,7 @@ function TelaPrincipal() {
 
             <Pressable style={styleHome.btn}>
               <Text
-                style={{ fontFamily: "Montserrat_400Regular", fontSize: 19 }}
+                style={{ fontFamily: "Montserrat_400Regular", fontSize: 20 }}
               >
                 Reserva
               </Text>

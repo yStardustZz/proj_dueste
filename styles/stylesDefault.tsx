@@ -2,7 +2,7 @@ import { StyleSheet } from "react-native";
 
 const stylePadrao = StyleSheet.create({
   style: {
-    backgroundColor: "#333333",
+    backgroundColor: "#fff",
     color: "#fff",
     width: "100%",
     height: "100%",

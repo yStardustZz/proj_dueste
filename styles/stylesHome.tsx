@@ -6,21 +6,21 @@ const styleHome = StyleSheet.create({
   // ===== style geral da tela =====
 
   style: {
-    backgroundColor: "#333333",
+    backgroundColor: "#fff",
   },
 
   // ===== botões delivery/reserva =====
 
   btn: {
-    width: 150,
+    width: 160,
     height: 60,
     backgroundColor: "#fcba03",
     borderWidth: 3,
     borderRadius: 50,
     justifyContent: "center",
     alignItems: "center",
-    paddingVertical: 5,
-    paddingHorizontal: 5,
+    paddingVertical: 15,
+    paddingHorizontal: 20,
   },
   alignBtn: {
     flexDirection: "row",
@@ -29,13 +29,13 @@ const styleHome = StyleSheet.create({
   alignBtnRow: {
     justifyContent: "center",
     alignItems: "center",
-    marginTop: width * 0.7,
+    marginTop: width * 0.47,
   },
 
   //===== banner =====
 
   bannerStyle: {
-    marginTop: 100,
+    marginTop: 50,
   },
   container: {
     flex: 1,
@@ -53,7 +53,18 @@ const styleHome = StyleSheet.create({
   //fix linha branca iOS
 
   fixCinza: {
-    backgroundColor: "#333",
+    backgroundColor: "#fff",
+  },
+
+  //alinhamento do ola
+
+  logoAlign: {
+    alignItems: "center",
+    marginTop: 40,
+  },
+  logoStyle: {
+    width: 200,
+    height: 100,
   },
 });
 
