@@ -9,6 +9,7 @@ import TelaCardapio from "./telas/telaCardapio";
 import TelaConfigs from "./telas/telaSettings";
 import Ionicon from "react-native-vector-icons/Ionicons";
 import Entypo from "react-native-vector-icons/Entypo";
+import { useTheme } from "react-native-paper";
 
 //=========== app ==========
 
@@ -37,6 +38,8 @@ const styles = StyleSheet.create({
 });
 
 function MyTabs() {
+  const theme = useTheme();
+  theme.colors.secondaryContainer = "#fcba03";
   return (
     <Tab.Navigator
       initialRouteName="Início"
